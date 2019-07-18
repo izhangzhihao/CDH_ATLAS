@@ -1,3 +1,29 @@
+***compatible with CDH 5.16.2***
+# Steps to install
+
+```bash
+mvn -DskipTests package -Pdist
+```
+
+```bash
+solrctl instancedir --generate $HOME/solr_configs
+solrctl instancedir --list
+
+solrctl instancedir --create vertex_index $HOME/solr_configs
+solrctl instancedir --create edge_index $HOME/solr_configs
+solrctl instancedir --create fulltext_index $HOME/solr_configs
+```
+
+```bash
+tar -xzvf apache-atlas-${project.version}-server.tar.gz
+cd atlas-${project.version}
+./bin/atlas_start.py
+```
+
+username/password: admin/admin
+
+
+
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
 # distributed with this work for additional information

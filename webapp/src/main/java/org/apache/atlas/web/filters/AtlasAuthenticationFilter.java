@@ -199,7 +199,7 @@ public class AtlasAuthenticationFilter extends AuthenticationFilter {
     }
 
 
-    @Override
+    /*@Override
     public void initializeSecretProvider(FilterConfig filterConfig) throws ServletException {
         LOG.info("==> AtlasAuthenticationFilter.initializeSecretProvider");
 
@@ -224,7 +224,7 @@ public class AtlasAuthenticationFilter extends AuthenticationFilter {
         signer = new Signer(secretProvider);
 
         LOG.info("<== AtlasAuthenticationFilter.initializeSecretProvider(filterConfig={})", filterConfig);
-    }
+    }*/
 
     @Override
     protected Properties getConfiguration(String configPrefix, FilterConfig filterConfig) throws ServletException {

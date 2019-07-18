@@ -56,13 +56,17 @@
 #export ATLAS_EXPANDED_WEBAPP_DIR=
 
 # indicates whether or not a local instance of HBase should be started for Atlas
-export MANAGE_LOCAL_HBASE=${hbase.embedded}
+export MANAGE_LOCAL_HBASE=true
 
 # indicates whether or not a local instance of Solr should be started for Atlas
-export MANAGE_LOCAL_SOLR=${solr.embedded}
+export MANAGE_LOCAL_SOLR=true
 
 # indicates whether or not cassandra is the embedded backend for Atlas
-export MANAGE_EMBEDDED_CASSANDRA=${cassandra.embedded}
+export MANAGE_EMBEDDED_CASSANDRA=false
 
 # indicates whether or not a local instance of Elasticsearch should be started for Atlas
-export MANAGE_LOCAL_ELASTICSEARCH=${elasticsearch.managed}
+export MANAGE_LOCAL_ELASTICSEARCH=false
+
+export HIVE_HOME=/opt/cloudera/parcels/CDH/lib/hive/
+export HBASE_CONF_DIR=/opt/cloudera/parcels/CDH/lib/hbase/conf/
+export HADOOP_HOME=/opt/cloudera/parcels/CDH/lib/hadoop/

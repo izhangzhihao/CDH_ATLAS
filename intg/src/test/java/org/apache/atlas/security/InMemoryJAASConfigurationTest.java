@@ -18,7 +18,7 @@
 
 package org.apache.atlas.security;
 
-import org.apache.hadoop.util.StringUtils;
+import org.apache.commons.lang.StringUtils;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

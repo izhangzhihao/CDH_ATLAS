@@ -43,7 +43,7 @@ import org.apache.atlas.model.PList;
 import org.apache.atlas.model.SearchFilter.SortType;
 import org.apache.atlas.model.TypeCategory;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.hadoop.util.StringUtils;
+import org.apache.commons.lang.StringUtils;
 
 import static com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility.NONE;
 import static com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility.PUBLIC_ONLY;

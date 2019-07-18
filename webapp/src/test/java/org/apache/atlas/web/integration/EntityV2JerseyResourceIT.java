@@ -39,7 +39,7 @@ import org.apache.atlas.model.typedef.AtlasTypesDef;
 import org.apache.atlas.type.AtlasTypeUtil;
 import org.apache.atlas.v1.typesystem.types.utils.TypesUtil;
 import org.apache.commons.lang.RandomStringUtils;
-import org.apache.hadoop.util.StringUtils;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
