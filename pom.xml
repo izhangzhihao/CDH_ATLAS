@@ -649,10 +649,10 @@
         <jersey.version>1.19</jersey.version>
         <jsr.version>1.1</jsr.version>
 
-        <hadoop.version>2.7.1</hadoop.version>
-        <hbase.version>1.1.2</hbase.version>
-        <solr.version>5.5.1</solr.version>
-        <kafka.version>1.0.0</kafka.version>
+        <hadoop.version>2.6.0</hadoop.version>
+        <hbase.version>1.2.0</hbase.version>
+        <solr.version>4.10.3</solr.version>
+        <kafka.version>2.1.0</kafka.version>
         <elasticsearch.version>5.6.4</elasticsearch.version>
         <kafka.scala.binary.version>2.11</kafka.scala.binary.version>
         <curator.version>2.11.0</curator.version>
@@ -1856,11 +1856,11 @@
                                     <version>[3.5.0,)</version>
                                     <message>** MAVEN VERSION ERROR ** Maven 3.5.0 or above is required. See https://maven.apache.org/install.html </message>
                                 </requireMavenVersion>
-                                <requireJavaVersion>
-                                    <level>ERROR</level>
-                                    <version>[1.8.0-151,)</version>
-                                    <message>** JAVA VERSION ERROR ** Java 8 (Update 151) or above is required.</message>
-                                </requireJavaVersion>
+<!--                                <requireJavaVersion>-->
+<!--                                    <level>ERROR</level>-->
+<!--                                    <version>[1.8.0-151,)</version>-->
+<!--                                    <message>** JAVA VERSION ERROR ** Java 8 (Update 151) or above is required.</message>-->
+<!--                                </requireJavaVersion>-->
                                 <requireJavaVersion>
                                     <level>WARN</level>
                                     <version>(,1.9]</version>
