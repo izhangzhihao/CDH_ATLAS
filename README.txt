@@ -22,6 +22,21 @@ cd atlas-${project.version}
 
 username/password: admin/admin
 
+Hive Hook
+Atlas Hive hook registers with Hive to listen for create/update/delete operations and updates the metadata in Atlas, via Kafka notifications, for the changes in Hive. Follow the instructions below to setup Atlas hook in Hive:
+
+Set-up Atlas hook in hive-site.xml by adding the following:
+    <property>
+      <name>hive.exec.post.hooks</name>
+      <value>org.apache.atlas.hive.hook.HiveHook</value>
+    </property>
+untar apache-atlas-${project.version}-hive-hook.tar.gz
+cd apache-atlas-hive-hook-${project.version}
+Copy entire contents of folder apache-atlas-hive-hook-${project.version}/hook/hive to /opt/local/hive/lib
+Add 'export HIVE_AUX_JARS_PATH=/opt/local/hive/lib/atlas-hive-plugin-impl' in hive-env.sh of your hive configuration
+Copy atlas-application.properties to /opt/local/hive/lib/.
+Add jvm options: -Datlas.conf=/opt/local/hive/lib/
+
 
 
 # Licensed to the Apache Software Foundation (ASF) under one
