@@ -13,6 +13,7 @@
 #  limitations under the License. See accompanying LICENSE file.
 #
 # resolve links - $0 may be a softlink
+# NOTE: put the unziped file and atlas-application.properties in /opt/local/hive/lib
 PRG="${0}"
 
 [[ `uname -s` == *"CYGWIN"* ]] && CYGWIN=true
@@ -46,7 +47,7 @@ if [ ! -e "${JAVA_BIN}" ] || [ ! -e "${JAR_BIN}" ]; then
 fi
 
 # Construct Atlas classpath using jars from hook/hive/atlas-hive-plugin-impl/ directory.
-for i in "${BASEDIR}/hook/hive/atlas-hive-plugin-impl/"*.jar; do
+for i in "${BASEDIR}/lib/atlas-hive-plugin-impl/"*.jar; do
   ATLASCPPATH="${ATLASCPPATH}:$i"
 done
 
@@ -117,7 +118,7 @@ then
 fi
 
 JAVA_PROPERTIES="$ATLAS_OPTS -Datlas.log.dir=$ATLAS_LOG_DIR -Datlas.log.file=import-hive.log
--Dlog4j.configuration=atlas-hive-import-log4j.xml"
+-Dlog4j.configuration=atlas-hive-import-log4j.xml -Datlas.conf=/opt/local/hive/lib"
 
 IMPORT_ARGS=
 JVM_ARGS=

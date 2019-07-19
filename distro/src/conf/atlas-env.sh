@@ -70,3 +70,4 @@ export MANAGE_LOCAL_ELASTICSEARCH=false
 export HIVE_HOME=/opt/cloudera/parcels/CDH/lib/hive/
 export HBASE_CONF_DIR=/opt/cloudera/parcels/CDH/lib/hbase/conf/
 export HADOOP_HOME=/opt/cloudera/parcels/CDH/lib/hadoop/
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
